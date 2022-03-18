@@ -143,8 +143,6 @@ body {
     font-size: var(--fs-400);
     color: hsl(var(--clr-white));
     background-color: hsl(var(--clr-dark));
-    background: url("/assets/shared/main-bg.png");
-    background-position: center;
     background-repeat: 'none';
     line-height: 1.5;
     min-height: 100vh;
@@ -711,7 +709,9 @@ body {
 #Welcome {
     
 }
-
+.home {
+    background: url("../assets/shared/main-bg.png");
+}
 .rounded-circle{
     border-radius: 500px;
     padding: 20px;
