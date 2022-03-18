@@ -1,2 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Samuel Adkins</title>
+<meta charset="utf-8">
 
-<h1>Hello world!<h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<!-- Custom CSS-->
+<link rel="stylesheet" href="css/index.css">
+<title>Samuel Adkins' Website</title>
+<script src="nav.js"
+defer></script>
+</head>
+<body class="home">
+    <header class="primary-header flex">
+        <div>
+            <img src="./assets/shared/logo-icon.svg" alt="logo" class="logo">
+        </div>
+        <div class ="title ff-sans-cond text-white">
+            <h1>Samuel Adkins' Personal Site</h1>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+    
+
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active">
+                <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">
+                    <span aria-hidden="true">00</span>Home
+                </a>
+            </li>
+            <li>
+                <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="projects.html">
+                    <span aria-hidden="true">01</span>Projects
+                </a>
+            </li>
+            <li>
+                <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="achievments.html">
+                    <span aria-hidden="true">02</span>Achievments
+                </a>
+            </li>
+            <li>
+                <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contacts.html">
+                    <span aria-hidden="true">03</span>Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="container-fluid text-center" id="Welcome">
+        <h3 class="intro_text">Samuel Adkins</h3>
+        <img src="./assets/shared/sadkins.png" class="rounded-circle" style="display:inline" alt="Samuel Adkins">
+          
+
+      <p class="intro_text">My name is Sam.</p>
+    </section>
+
+
+</body>
+</html>
