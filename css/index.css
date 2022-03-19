@@ -521,6 +521,99 @@ body {
 
 }
 
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  
+}
+
+@media (max-width: 1000px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+}
+#Welcome {
+  flex: 1;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  
+}
+
+#flip {
+  height:55px;
+  overflow:hidden;
+  text-align: center;
+ 
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+  
+  
+  
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+ 
+}
+
+#flip div div {
+  color:#3547f1;
+  
+}
+#flip div:first-child div {
+  color:#4ec7f3;
+
+}
+#flip div:last-child div {
+  color:#c807eb;
+  
+  
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+
+#Welcome-Description {
+  flex: 1;
+  background-color: transparent;
+  
+  color:#999;
+  text-transform: uppercase;
+  font-size:46px;
+  font-weight:bold; 
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#center {
+  
+  width: 60%;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
 .grid-container {
     text-align: center;
     display: grid;
@@ -688,7 +781,7 @@ body {
 /* primary header */
 .logo {
     margin: 2rem;
-    filter: invert(100%)
+    /* filter: invert(100%) */
 }
 
 .primary-header {
@@ -710,7 +803,8 @@ body {
     
 }
 .home {
-    background: url("../assets/shared/main-bg.png");
+    background: url("../assets/shared/testbg.jpg");
+    background-size: cover;
 }
 .rounded-circle{
     border-radius: 500px;
@@ -751,7 +845,7 @@ body {
     margin-inline-end: 0.75em;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 75em) {
     .primary-navigation {
         --gap: 2em;
 
@@ -787,7 +881,7 @@ body {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("../assets/shared/close-icon.svg")
+        background-image: url("../assets/shared/close-icon2.png")
     }
 }
 
@@ -819,3 +913,7 @@ body {
 }
 
 
+.logos {
+  flex-direction: row;
+  display: flex;
+}
