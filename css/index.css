@@ -781,7 +781,18 @@ body {
 /* primary header */
 .logo {
     margin: 2rem;
+    flex:1;
+    width: auto;
+    max-width: 200px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
     
+}
+
+.logo_image {
+  object-fit: fill;
+  background-color: #4ec7f3;
 }
 
 .primary-header {
@@ -871,10 +882,10 @@ body {
         position: absolute;
         z-index: 9999;
         background-color: transparent;
-        background-image: url("../assets/shared/menu-icon.svg");
+        background-image: url("../assets/shared/icon-menu.png");
         background-repeat: no-repeat;
-        width: 2rem;
-        border: 0;
+        width: 4rem;
+        filter: invert(100%);       
         aspect-ratio: 1;
         top: 2rem;
         right: 2rem;
@@ -916,4 +927,7 @@ body {
 .logos {
   flex-direction: row;
   display: flex;
+  width: auto;
+  max-width: 300px;
+  height: auto;
 }

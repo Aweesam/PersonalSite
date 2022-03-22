@@ -1,0 +1,65 @@
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+    
+}
+body{
+    background-color: black;
+}
+.titley {
+    background-color: black;
+    justify-content: center;
+   align-items: center;
+    color: white;
+}
+.titley_text{
+}
+
+.animerow {
+    height: 80vh;
+    flex-grow: 1;
+    align-items: center;
+    background-color: aquamarine;
+    
+}
+
+.animeimg {
+    background-color: antiquewhite;
+    /* border: 2em;
+    border-color: green;
+    border-radius: 20px;
+    align-items: center; */
+    
+    /* vertical-align: bottom;
+    object-fit: cover; */
+    /* max-height: 50%;
+    min-width: 100%; */
+}
+.animeimgwide {
+    min-width: 100% !important;
+    height: 100% !important;
+
+    /* vertical-align: bottom;
+    object-fit: cover; */
+    /* max-height: 50%;
+    min-width: 100%; */
+}
+.divy {
+    width: 100% !important;
+}
+.container > div {
+    flex: 50%;
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 10px;
+}
+img {
+    display: block;
+    /* vertical-align: bottom;
+    object-fit: cover; */
+    max-height: 50%;
+    max-width: 50%;
+    
+}
+
+
